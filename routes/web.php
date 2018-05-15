@@ -30,6 +30,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('users/deactivate/{id}', 'UserController@deactivate')->name('users.deactivate');
     Route::post('users/activate/{id}', 'UserController@activate')->name('users.activate');
     Route::resource('users', 'UserController');
+    Route::resource('jorongs','JorongController');
 });
+
+
 
 Route::get('image/{type}/{id}', 'FileController@image')->name('get.image');
