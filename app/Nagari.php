@@ -8,3 +8,4 @@ class Nagari extends Model
 {
     protected $table = 'nagari';
 }
+bh
